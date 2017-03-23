@@ -1,0 +1,22 @@
+<html>   
+    <head>   
+	<meta charset='utf-8' />
+	<title>test</title>
+	<style>
+	    img { 
+		width:100% 
+	    }
+	</style>
+    </head>   
+    <body>   
+	<ul>
+	{% for row in rows %}
+	<li>{{ row|safe }}<br/></li>
+	{% endfor %}
+	</ul>
+	{% for row in picrows %}
+	    {{ row|safe }}
+	{% endfor %}
+	</ul>
+    </body>
+</html> 
